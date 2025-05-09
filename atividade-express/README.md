@@ -8,3 +8,5 @@ Atividade Express (Requisitos)
    de boas vindas usando esse valor
 4. Caso o usuário acesse sem userid é direcionado a página signup (pesquise como usar
    res.redirect() )
+5. Qualquer outra página que não tenha a rota indicada é direcionada para página de erro 404 com link
+   para o index (pesquise como usar res.status() )
