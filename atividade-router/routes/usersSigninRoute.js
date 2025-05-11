@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get("/", function (req, res, next) {
-  res.send(`Acesso à rota '/users' ${req.requestTime}`);
+  res.redirect("http://localhost:3000/users/signup");
 });
 
 module.exports = router;
