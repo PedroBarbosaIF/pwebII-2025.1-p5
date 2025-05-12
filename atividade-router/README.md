@@ -2,7 +2,9 @@
 
 ## Descrição
 
-Este projeto é uma extensão do exercício da Aula 6 de Express, agora utilizando o recurso de `Router` do Express.js para organizar as rotas de forma modular. O objetivo é criar uma aplicação com estrutura bem definida e funcional.
+Este projeto é uma extensão do [exercício da Aula 6 de Express](https://github.com/PedroBarbosaIF/pwebII-2025.1-p5/tree/main/atividade-express), agora utilizando o recurso de `Router` do Express.js para organizar as rotas de forma modular. O objetivo é criar uma aplicação com estrutura bem definida e funcional.
+
+
 
 ## Requisitos
 
