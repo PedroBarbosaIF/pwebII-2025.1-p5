@@ -1,0 +1,30 @@
+[
+  {
+    "id": "nito",
+    "nome": "Nito Lorde das Tumbas",
+    "descricao": "Nito é um chefe em Dark Souls. É um dos quatro Lordes de Almas e foi uma figura chave na guerra contras os dragões.",
+    "drop": "Alma de Lorde (Alma do Nito Lorde das Tumbas)",
+    "imgsrc": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/03/Gravelord-Nito-Facts-Dark-Souls-1.jpg"
+  },
+  {
+    "id": "seath",
+    "nome": "Seath, o Descamado",
+    "descricao": "Seath é um dragão traidor e um dos quatro Lordes de Almas. Ele é responsável pela extinção dos dragões imortais.",
+    "drop": "Alma de Lorde (Alma de Seath, o Descamado)",
+    "imgsrc": "https://tse2.mm.bing.net/th/id/OIP.wMZHRhUduyqRczHDw7N8BAHaEK?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": "gwyn",
+    "nome": "Gwyn, Lorde da Luz Solar",
+    "descricao": "Gwyn é o chefe final de Dark Souls e o principal portador da Chama. Ele sacrificou-se para prolongar a Era do Fogo.",
+    "drop": "Alma de Lorde (Alma de Gwyn, Lorde da Luz Solar)",
+    "imgsrc": "https://i.ytimg.com/vi/1tZku6xdr2E/maxresdefault.jpg"
+  },
+  {
+    "id": "bruxa_izalith",
+    "nome": "Bruxa de Izalith",
+    "descricao": "A Bruxa de Izalith tentou replicar a Primeira Chama, criando o Chaos e tornando-se um dos quatro Lordes de Almas.",
+    "drop": "Alma de Lorde (Alma da Bruxa de Izalith)",
+    "imgsrc": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80c7b6c0-c437-4443-a78b-0bdfe003dfb0/dge7hyt-b74370d4-e191-4002-85fa-ee9bcf45794d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwYzdiNmMwLWM0MzctNDQ0My1hNzhiLTBiZGZlMDAzZGZiMFwvZGdlN2h5dC1iNzQzNzBkNC1lMTkxLTQwMDItODVmYS1lZTliY2Y0NTc5NGQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AyMjr_9j-l-cgkD611YUPwAKPxz5tA3hBr_FJA_EpAg"
+  }
+]
