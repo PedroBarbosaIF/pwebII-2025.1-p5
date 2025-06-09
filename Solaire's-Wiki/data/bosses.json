@@ -1,0 +1,37 @@
+[
+  {
+    "id": "nito",
+    "nome": "Nito Lorde das Tumbas",
+    "descricao": "Nito é um chefe em Dark Souls. É um dos quatro Lordes de Almas e foi uma figura chave na guerra contras os dragões.",
+    "drop": "Alma de Lorde (Alma do Nito Lorde das Tumbas)",
+    "imgsrc": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/03/Gravelord-Nito-Facts-Dark-Souls-1.jpg"
+  },
+  {
+    "id": "gwyn",
+    "nome": "Gwyn, Lorde da Luz Solar",
+    "descricao": "Gwyn é o chefe final de Dark Souls. Ele liderou a guerra contra os dragões e sacrificou-se para manter a Era do Fogo.",
+    "drop": "Alma de Gwyn, Lorde da Luz Solar",
+    "imgsrc": "https://th.bing.com/th/id/R.635c1086a9da17bf24f04eb791babf28?rik=GIorxTtEORccQw&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fdarksouls%2fimages%2fd%2fd7%2fGwyn-Lord_of_Cinder.jpg%2frevision%2flatest%3fcb%3d20160511105443&ehk=lPMkhs0MAnN6%2bYEHl5elq8nrDSpu5Dr8OV7M%2bPibu7w%3d&risl=&pid=ImgRaw&r=0"
+  },
+  {
+    "id": "seath",
+    "nome": "Seath, o Descamado",
+    "descricao": "Seath traiu os dragões e foi recompensado com um título de lorde. Ele é obcecado por imortalidade.",
+    "drop": "Alma de Seath, o Descamado",
+    "imgsrc": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/dark-souls-seath.jpg"
+  },
+  {
+    "id": "bedofchaos",
+    "nome": "Leito do Caos",
+    "descricao": "O Leito do Caos é a fonte do poder demoníaco em Lordran, criado pela Bruxa de Izalith.",
+    "drop": "Alma do Leito do Caos",
+    "imgsrc": "https://tse2.mm.bing.net/th/id/OIP.MxHBAfx6fyGPw8jScgPmYQAAAA?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": "fourkings",
+    "nome": "Quatro Reis",
+    "descricao": "Os Quatro Reis governavam Nova Londo antes de sucumbirem à escuridão do Abismo.",
+    "drop": "Alma dos Quatro Reis",
+    "imgsrc": "https://i.redd.it/xmf9t71s8kw51.jpg"
+  }
+]

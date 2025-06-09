@@ -1,0 +1,32 @@
+[
+  {
+    "id": "santuariodoelodefogo",
+    "nome": "Santuário do Elo de Fogo",
+    "descricao": "O ponto central de Dark Souls, onde os jogadores podem descansar, encontrar NPCs e acessar diversas áreas do jogo.",
+    "imgsrc": "https://cdn.staticneo.com/w/darksouls/Firelink_Shrine.png"
+  },
+  {
+    "id": "anorlondo",
+    "nome": "Anor Londo",
+    "descricao": "Uma cidade majestosa construída pelos deuses, famosa por sua arquitetura grandiosa e desafios intensos.",
+    "imgsrc": "https://th.bing.com/th/id/R.f468e816881c5ee78c5fb42449865e34?rik=jNrfqypb7fZpaw&riu=http%3a%2f%2fdarksouls.wiki.fextralife.com%2ffile%2fDark-Souls%2fanorlondo.png&ehk=bcFeHUvqk4JUqCRGUu9AYIl9h2ulnScdj4i4hwdxp94%3d&risl=&pid=ImgRaw&r=0"
+  },
+  {
+    "id": "burgodosmortosvivos",
+    "nome": "Burgo dos Mortos Vivos",
+    "descricao": "Uma área sombria e perigosa, cheia de inimigos e armadilhas, localizada abaixo da cidade principal.",
+    "imgsrc": "https://vignette.wikia.nocookie.net/darksouls/images/6/6c/Undead_Burg.jpg/revision/latest?cb=20160526121909"
+  },
+  {
+    "id": "ruinasdenovalondo",
+    "nome": "Ruínas de Nova Londo",
+    "descricao": "Antiga cidade inundada para conter o avanço do Abismo, habitada por fantasmas e cheia de mistérios.",
+    "imgsrc": "https://vignette.wikia.nocookie.net/darksouls/images/7/73/New_londo_ruins.jpg/revision/latest?cb=20130211004107"
+  },
+  {
+    "id": "arquivododuque",
+    "nome": "Arquivo do Duque",
+    "descricao": "Uma vasta biblioteca protegida por Seath, o Descamado, repleta de magias e segredos.",
+    "imgsrc": "https://vignette.wikia.nocookie.net/darksouls/images/0/04/Duke's_Archive.jpg/revision/latest?cb=20160517145202"
+  }
+]

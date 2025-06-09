@@ -3,7 +3,10 @@ var router = express.Router();
 
 let allBossesData = require('../data/bosses.json');
 
-router.get('/', function (req, res, next){
+/* GET home page. */
+
+/* Rota para a lista de personagens (URL: /characters) */
+/* router.get('/', function (req, res, next){
   res.render('bosses_list', 
     
     {
@@ -12,7 +15,9 @@ router.get('/', function (req, res, next){
 
   );
 });
+*/
 
+// Pegando o id do personagem pela rota.
 router.get('/:id', function (req, res, next) {
   // Pega o id do personagem.
   let bossId = req.params.id;
@@ -26,15 +31,17 @@ router.get('/:id', function (req, res, next) {
     {
       selected: bossId,
       bossesList: allBossesData,
-      nome: boss.nameCharacter,
+      title: boss.nome,
+      nome: boss.nome,
       descricao: boss.descricao,
+      drop: boss.drop,
       imgsrc: boss.imgsrc
     }
     
     );
   } else {
     // Se o personagem não for encontrado, encaminha para um erro 404
-    const err = new Error('Personagem não encontrado');
+    const err = new Error('Chefe não encontrado');
     err.status = 404;
     next(err); // Deixa o middleware de erro do Express Generator lidar com isso :D
   }
