@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card shadow">
+        <div class="card-body">
+          <h1 class="card-title text-center mb-4"><%= title %></h1>
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"<%= quote %>"</p>
+            <footer class="blockquote-footer mt-2">Ron Swanson</footer>
+            <input class="btn btn-secondary" type="button" value="Recarregar a página" onClick="window.location.reload()">
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
