@@ -1,8 +1,67 @@
 <div class="d-flex flex-row mb-2" style="justify-content: space-between;">
   <div>
-    <h1 class="text-light"><%= nome %></h1>
-    <p class="text-light"><%= descricao %></p>  
+    <h1 class="text-light">
+      <%= nome %>
+    </h1>
+    <p class="text-light">
+      <%= descricao %>
+    </p>
   </div>
   <img id="imgCharacter" src="<%= imgsrc %>" height="300px">
 </div>
 
+<!-- Chat Section -->
+<div class="card bg-dark text-light mb-3" style="max-width: 600px;">
+  <div class="card-header">Chat deste local</div>
+  <div class="card-body" id="chat-messages" style="height: 200px; overflow-y: auto;"></div>
+  <form id="chat-form" class="mt-2">
+    <div class="input-group">
+      <input type="text" id="chat-username" class="form-control" placeholder="Seu nome" required>
+      <input type="text" id="chat-message" class="form-control" placeholder="Digite sua mensagem" required>
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  const screenType = 'place';
+  const screenId = "<%= selected %>";
+  const chatMessagesDiv = document.getElementById('chat-messages');
+  const chatForm = document.getElementById('chat-form');
+
+  function renderMessages(messages) {
+    chatMessagesDiv.innerHTML = '';
+    messages.forEach(msg => {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = 'mb-1';
+      msgDiv.innerHTML = `<strong>${msg.username}:</strong> ${msg.message} <span style="font-size:0.8em;color:gray;">(${new Date(msg.timestamp).toLocaleString()})</span>`;
+      chatMessagesDiv.appendChild(msgDiv);
+    });
+    chatMessagesDiv.scrollTop = chatMessagesDiv.scrollHeight;
+  }
+
+  async function fetchMessages() {
+    const res = await fetch(`/chat/${screenType}/${screenId}`);
+    const data = await res.json();
+    renderMessages(data);
+  }
+
+  chatForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const username = document.getElementById('chat-username').value.trim();
+    const message = document.getElementById('chat-message').value.trim();
+    if (!username || !message) return;
+    await fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ screenType, screenId, username, message })
+    });
+    document.getElementById('chat-message').value = '';
+    fetchMessages();
+  });
+
+  // Carregar mensagens ao abrir a página
+  fetchMessages();
+  // Atualizar a cada 10 segundos
+  setInterval(fetchMessages, 10000);
+</script>

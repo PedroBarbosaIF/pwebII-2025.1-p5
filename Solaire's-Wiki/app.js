@@ -5,9 +5,27 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const expressLayouts = require("express-ejs-layouts");
 
+require("dotenv").config();
+const mongoose = require("mongoose");
 var indexRouter = require("./routes/index");
 var bossesRouter = require("./routes/bosses");
 var placesRouter = require("./routes/places");
+
+const chatRouter = require("./routes/chat");
+// Conexão com o MongoDB
+const mongoUri =
+  process.env.MONGODB_URI || "mongodb://localhost:27017/solairewiki";
+mongoose.connect(mongoUri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+mongoose.connection.on(
+  "error",
+  console.error.bind(console, "Erro de conexão com MongoDB:")
+);
+mongoose.connection.once("open", () => {
+  console.log("Conectado ao MongoDB");
+});
 
 const { title } = require("process");
 
@@ -26,7 +44,6 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
 
 app.use((req, res, next) => {
   res.locals.bossesList = allBossesData;
@@ -43,6 +60,8 @@ app.use((req, res, next) => {
 app.use("/", indexRouter);
 app.use("/bosses", bossesRouter);
 app.use("/places", placesRouter);
+app.use("/chat", chatRouter);
+app.use(express.static(path.join(__dirname, "public")));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
