@@ -12,6 +12,10 @@ var bossesRouter = require("./routes/bosses");
 var placesRouter = require("./routes/places");
 
 const chatRouter = require("./routes/chat");
+
+const mongoUri_exp =
+  "mongodb+srv://Pedro_Barbosa:@cluster0.qj33vkh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
 // Conexão com o MongoDB
 const mongoUri =
   process.env.MONGODB_URI || "mongodb://localhost:27017/solairewiki";
